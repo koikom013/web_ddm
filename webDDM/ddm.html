@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Downtime Reporter</title>
+</head>
+<body>
+    <!--a style="text-decoration:none" href="index.html">
+        <img src="Resources/komlogo.png">
+    </a-->
+    
+    <ul class="navbar">
+        <li><a style="text-decoration:none" href="index.html">Home</a></li>
+        <li><a style="text-decoration:none" href="ddm.html">Downtime Report</a></li>
+        <li><a style="text-decoration:none" href="parts.html">Parts Return</a></li>
+    </ul>
+    <h1>Test: Downtime Reporter is Connected!</h1>
+    <div class="container">
+        <form action="https://script.google.com/macros/s/AKfycby9yaeEljn7M0QVGcHY4APkThmzqIvMCdZhPkUqiM4KcdLRBRFSmzmkgmiRBB2Dv8IV/exec"  
+        method="POST" autocomplete="off">
+            <div class="form-element-TL">
+                <label for="unit">Unit ID
+                    <input id="unit" type="text" name="Unit ID">
+                </label>
+                <label for="model">model
+                    <input id="model" type="text" name="Model">
+                </label>
+                <label for="serial">Serial No.
+                    <input id="serial" type="text" name="Serial No.">
+                </label>
+                <input type="submit">
+            </div>
+            <div class="form-element-TR">
+               <label for="date">Date
+                    <input id="date" type="date" name="Report Date">
+               </label> 
+               <label for="time">Time
+                    <input id="time" type="time" name="Report Time">
+               </label>
+               <label for="smr">SMR
+                    <input id="smr" type="number" name="SMR">
+               </label>
+            </div>
+
+            <div class="textbox-top">
+                <label for="tb-subject">Subject</label><br>
+                <textarea name="subject" id="subject" cols="30" rows="3"></textarea><br>
+                <label for="tb-remarks">Remarks</label><br>
+                <textarea name="subject" id="subject" cols="30" rows="3"></textarea>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
